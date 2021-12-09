@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TappasGratis</string>
+    <string name="searchbar">searchbar</string>
+    <string name="imagen2">imagen2</string>
+    <string name="imagen1">imagen1</string>
+    <string name="tappasgratis">TappasGratis</string>
+    <string name="buscar_por_ciudad_local_tapa">Busca por ciudad, local, tapa...</string>
+    <string name="title_activity_alta_local">AltaLocalActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="no_aparece_tu_bar_dalo_de_alta">No encuentras <br /> tu bar?<br /><br /> Dalo de alta aquí!</string>
+    <string name="busca_por_ciudad">Busca<br /> por <br />ciudad</string>
+    <string name="ver_todos_los_bares">Ver todos <br /> los bares</string>
+</resources>

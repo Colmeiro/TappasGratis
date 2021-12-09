@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="?android:attr/colorActivatedHighlight"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botonAltaLocal"
+        android:layout_width="140dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#612FBA"
+        android:text="@string/no_aparece_tu_bar_dalo_de_alta"
+        android:textSize="11dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="45dp"
+        android:onClick="mensajeEnsaladilla"
+        app:layout_constraintBottom_toBottomOf="@+id/botonAltaLocal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/botonAltaLocal"
+        app:srcCompat="@drawable/pincho_ensaladilla" />
+
+    <Button
+        android:id="@+id/botonBuscaPorCiudad"
+        android:layout_width="140dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#612FBA"
+        android:text="@string/busca_por_ciudad"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+    <!--<Button
+        android:id="@+id/botonZonaBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#612FBA"
+        android:text="Busca algo!"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />-->
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="238dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:srcCompat="@drawable/logotapas" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/searchbar"
+        android:text="@string/buscar_por_ciudad_local_tapa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+    <Button
+        android:id="@+id/botonBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="#612FBA"
+        android:text="BUSCATAPA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextBarraBusqueda" />
+
+    <EditText
+        android:id="@+id/editTextBarraBusqueda"
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="Busca tu tapa!"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="@+id/imageButton" />
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="148dp"
+        android:layout_height="86dp"
+        android:onClick="mensajeTortilla"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonAltaLocal"
+        app:srcCompat="@drawable/pincho_torti" />
+
+    <Button
+        android:id="@+id/botonVerTodo"
+        android:layout_width="140dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#612FBA"
+        android:layout_marginTop="20dp"
+        android:text="@string/ver_todos_los_bares"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:onClick="mensajeEmpanada"
+        app:layout_constraintBottom_toBottomOf="@+id/botonVerTodo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/botonVerTodo"
+        app:layout_constraintTop_toTopOf="@+id/botonVerTodo"
+        app:srcCompat="@drawable/empanada" />
+
+    <!--<Button
+       android:id="@+id/botonRecycler"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Button"
+       app:layout_constraintStart_toStartOf="@+id/botonVerTodo"
+       tools:layout_editor_absoluteY="593dp" />-->
+
+
+   <!--<com.google.android.gms.maps.MapView
+       android:id="@+id/mapView"
+       android:layout_width="350dp"
+       android:layout_height="180dp"
+       android:layout_marginBottom="60dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
